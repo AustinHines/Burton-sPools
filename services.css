@@ -8,10 +8,13 @@ html {
 }
 
 /* NAV */
+
+
+
 .nav{
     width: 20vw;
     height: 100vh;
-    background-color: rgba(200, 200, 200, 0.3);
+    background-color: white;
     display: flex;
     /* justify-content: center; */
     flex-direction: column;
@@ -20,18 +23,18 @@ html {
     position: fixed;
    font-size: 20px;
    font-weight: 200;
-   
+   border: 3px solid white;
    border-top: none;
    border-left: none;
    border-bottom: none;
-    box-shadow: rgba(150, 150, 150, 0.5) 10px 10px 10px; 
+   box-shadow: black 10px 10px 10px;
 }
 
 .nav img {
     height: 150px;
     width: 150px;
     margin-top: 90px;
-    border: 1px solid rgba(250, 250, 250, 0.3);
+    border: 1px solid white;
     border-radius: 50%;
     
 }
@@ -51,7 +54,6 @@ html {
     color: dodgerblue;
     text-decoration: none;
     /* font-size: 1.5rem; */
-    font-family: 'IBM Plex Sans', sans-serif;
     
 }
 
@@ -61,60 +63,47 @@ html {
 
 /* END NAV */
 
-/* HOME */
-#home{
+/* WORK */
+.services{
     width: 80vw;
-    height: 100vh;
+    height: 80vh;
     margin-left: 20%;
-    background-image: url('img/hero3.png');
-    background-size: cover;
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: rgba(200, 200, 200, 0.3); ;
+}
+
+.service-one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
+    width: 35vw;
+    height: 35vh;
 }
 
-#home h1 {
-    color: white;
-    font-size: 90px;
-    font-family: 'IBM Plex Sans', sans-serif;
-    letter-spacing: 2px;
-    font-weight: 200;
+.service-one img {
+    width: 40%;
+    height: 45%;
+    border: 3px solid whitesmoke;
+    border-radius: 15px;
+    margin-top: 10px;
 }
 
-#home h3 {
-    color: white;
-    font-size: 60px;
-    font-family: 'IBM Plex Sans', sans-serif;
-    letter-spacing: 2px;
-    font-weight: 100;
+.service-one p {
+    margin-top:10px ;
+    padding-left: 20px;
 }
 
-#home p{
-    color: white;
-    font-size:30px ;
-    font-weight: 100;
-    font-family: 'IBM Plex Sans', sans-serif;
-    margin-top: 2%;
+.service-one ul {
+    margin-top: 10px;
 }
+/* END WORK */
 
-#home a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    border: 2px solid white;
-    padding: 5px;
-    margin-top: 2%;
-    background-color: lightblue;
-    border-radius: 5px;
-}
+/* CONACT ME */
 
-#home a:hover{
-    background-color: darkblue;
-}
-/* END HOME */
-
-/* Contact Me  */
 #contact-me{
     width: 80vw;
     height: 30vh;
@@ -147,22 +136,12 @@ margin: 3%;
 
 
 /* End Contact Me */
-
+/* END CONTACT ME */
 
 /* MEDIA QUERIES */
 @media(max-width:736px){
     .nav{
         display: none;
-    }
-
-    #home{
-        width: 100vw;
-        margin: 0;
-        padding-left:10px ;
-    }
-
-    #home p {
-        padding: 0;
     }
 
     #contact-me{
@@ -172,6 +151,19 @@ margin: 3%;
         
     }
 
+    .services{
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .service-one{
+        width: 50vw;
+        height: 50vh;
+    }
+    
     
 }
 /* END MEDIA QUERIES */
