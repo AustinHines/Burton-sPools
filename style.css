@@ -100,17 +100,18 @@ html {
 
 #home a {
     text-decoration: none;
-    color: white;
+    color: dodgerblue;
     font-size: 20px;
     border: 2px solid white;
     padding: 5px;
     margin-top: 2%;
-    background-color: lightblue;
+    background-color: white; 
     border-radius: 5px;
 }
 
 #home a:hover{
-    background-color: darkblue;
+    background-color: dodgerblue;
+    color: white;
 }
 /* END HOME */
 
@@ -174,4 +175,15 @@ margin: 3%;
 
     
 }
+
+    @media(min-width:736px){
+        #home a:nth-of-type(2){
+            display: none;
+           
+        }
+
+        #home a:nth-of-type(3){
+            display: none;
+        }
+    }
 /* END MEDIA QUERIES */
